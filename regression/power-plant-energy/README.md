@@ -9,7 +9,7 @@ As part of my learning journey, I build this project using **Google BigQuery** f
 - [Usage](#-usage)
   - [Dataset](#-dataset)
   - [Installation & Requirements](#️-installation--requirements)
-  - [Tools](-tools)
+  - [Technologies Used](#️-technologies-used)
 - [Project Overview](#-project-overview)
 - [Key Dataset Insights](#-key-dataset-insights)
 - [Visual Analysis](#-visual-analysis)
@@ -29,14 +29,14 @@ git clone https://github.com/hendrialvt/power-plant-project.git
 ```
 pip install -r requirements.txt
 ```
-### 🛠️ Tools
-
+### 🛠️ Technologies Used
 - Python  
 - Pandas, NumPy  
 - Scikit-learn  
 - Google Cloud BigQuery  
 - Google Cloud Storage  
-- Vertex AI JupyterLab 
+- Vertex AI JupyterLab
+
 ## 📖 Project Overview
 
 This project uses the **Combined Cycle Power Plant dataset** from the UCI Machine Learning Repository. The dataset contains operational data collected from a power plant over several years (typically from **2006 to 2010**) in Turkey.
@@ -75,15 +75,6 @@ This plot shows the **average power output** at each rounded ambient temperature
 - Power output decreases as ambient temperature increases.
 - This negative correlation is expected due to reduced thermal efficiency at higher temperatures.
 - The smooth downward trend highlights the importance of including temperature in the machine learning model.
-
-## 🛠️ Technologies Used
-
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Google Cloud BigQuery  
-- Google Cloud Storage  
-- Vertex AI JupyterLab  
 
 ## 📈 Model Training
 
