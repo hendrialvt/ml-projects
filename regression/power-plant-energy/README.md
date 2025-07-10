@@ -1,6 +1,51 @@
+# ⚡ Power Plant Energy Output Prediction (Regression Project)
 
+This project predicts the **net hourly electrical energy output (PE)** of a Combined Cycle Power Plant based on environmental factors using a regression model.
 
+As part of my learning journey, I build this project using **Google BigQuery** for data storage and analysis, and **Vertex AI Workbench** for model development and training.  
 
+## 📒 Table of Contents
+
+- [Usage](#-usage)
+  - [Dataset](#-dataset)
+  - [Installation & Requirements](#️-installation--requirements)
+  - [Tools](#-tools)
+- [Project Overview](#-project-overview)
+- [Key Dataset Insights](#-key-dataset-insights)
+- [Visual Analysis](#-visual-analysis)
+- [Model Training](#-model-training)
+- [Model Performance](#-model-performance)
+
+## ⚡ Usage
+### 📄 Dataset
+- Combined Cycle Power Plant dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant).
+### ⚙️ Installation & Requirements
+
+1. Clone this repository:
+```bash
+git clone https://github.com/hendrialvt/power-plant-project.git
+```
+2. Install dependencies
+```
+pip install -r requirements.txt
+```
+### 🛠️ Technologies Used
+
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Google Cloud BigQuery  
+- Google Cloud Storage  
+- Vertex AI JupyterLab 
+## 📖 Project Overview
+
+- **Problem:** Predict the power plant's energy output based on four environmental sensor readings:
+  - Ambient Temperature (AT)
+  - Exhaust Vacuum (V)
+  - Ambient Pressure (AP)
+  - Relative Humidity (RH)
+
+## 📊 Key Dataset Insights
 
 | Metric                           | Value     |
 | -------------------------------- | --------- |
@@ -11,21 +56,45 @@
 | **Max Power Output (PE)**        | 495.76 MW |
 | **Avg Power Output (PE)**        | 454.37 MW |
 
-### 🌡️ Key Dataset Insights:
 - **Ambient Temperature (AT):** Ranges from **1.81°C** to **37.11°C** (average: **19.65°C**).
 - **Power Output (PE):** Ranges from **420.26 MW** to **495.76 MW** (average: **454.37 MW**).
-- These results show that temperature varies widely across the dataset, and power output stays within operational limits but still shows significant variation.
-- Higher ambient temperature reduces cooling efficiency and overall thermal efficiency in the plant, reducing its energy output.
-- This suggests that ambient temperature plays an important role in predicting the power plant’s energy output.
+- Higher ambient temperatures reduce cooling efficiency and overall thermal efficiency in the plant, leading to lower energy output.
+- This suggests ambient temperature is an important feature for predicting the plant’s energy output.
 
-### 📈 Visual Analysis: Power Output vs Ambient Temperature
+## 📈 Visual Analysis
 
 ![Average Power Output vs Rounded Ambient Temperature](figures/average_power_vs_temperature.png)
 
-The plot below shows the **average power output** at each rounded ambient temperature:
+This plot shows the **average power output** at each rounded ambient temperature:
 
 - Power output decreases as ambient temperature increases.
 - This negative correlation is expected due to reduced thermal efficiency at higher temperatures.
-- The smooth downward trend suggests that ambient temperature is a strong predictor of power output.
+- The smooth downward trend highlights the importance of including temperature in the machine learning model.
 
-This visual insight highlights the importance of including temperature in the machine learning model for power output prediction.
+
+## 🛠️ Technologies Used
+
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Google Cloud BigQuery  
+- Google Cloud Storage  
+- Vertex AI JupyterLab  
+
+## 📈 Model Training
+
+- **Model Used:** Random Forest Regressor  
+- **Training Workflow:**
+  - Data pulled from BigQuery
+  - Data split into training and testing sets
+  - Model trained on training set using Random Forest Regressor
+
+## 📊 Model Performance
+
+Below are the model’s performance metrics on the test set:
+
+| Metric                     | Value |
+|----------------------------|-------|
+| Mean Absolute Error (MAE)  | *X.XXXX* MW |
+| Root Mean Squared Error (RMSE) | *X.XXXX* MW |
+| R² Score                   | *X.XXXX* |
