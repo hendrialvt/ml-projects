@@ -11,6 +11,8 @@
 *.keras
 models/
 
+# Ignore data files
+*.csv
 # Ignore temporary files
 __pycache__/
 *.pyc
