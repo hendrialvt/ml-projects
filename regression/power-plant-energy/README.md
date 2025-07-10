@@ -9,7 +9,7 @@ As part of my learning journey, I build this project using **Google BigQuery** f
 - [Usage](#-usage)
   - [Dataset](#-dataset)
   - [Installation & Requirements](#️-installation--requirements)
-  - [Tools](#-tools)
+  - [Tools](-tools)
 - [Project Overview](#-project-overview)
 - [Key Dataset Insights](#-key-dataset-insights)
 - [Visual Analysis](#-visual-analysis)
