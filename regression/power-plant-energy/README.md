@@ -29,7 +29,7 @@ git clone https://github.com/hendrialvt/power-plant-project.git
 ```
 pip install -r requirements.txt
 ```
-### 🛠️ Technologies Used
+### 🛠️ Tools
 
 - Python  
 - Pandas, NumPy  
@@ -39,11 +39,16 @@ pip install -r requirements.txt
 - Vertex AI JupyterLab 
 ## 📖 Project Overview
 
-- **Problem:** Predict the power plant's energy output based on four environmental sensor readings:
-  - Ambient Temperature (AT)
-  - Exhaust Vacuum (V)
-  - Ambient Pressure (AP)
-  - Relative Humidity (RH)
+This project uses the **Combined Cycle Power Plant dataset** from the UCI Machine Learning Repository. The dataset contains operational data collected from a power plant over several years (typically from **2006 to 2010**) in Turkey.
+
+It includes **hourly measurements** of various environmental and operational factors, resulting in over **40,000 data points** in total across all years.
+
+Features:
+- **AT (Ambient Temperature):** Outside temperature in °C.
+- **V (Exhaust Vacuum):** Pressure inside the turbine’s vacuum system.
+- **AP (Ambient Pressure):** Atmospheric pressure in millibars.
+- **RH (Relative Humidity):** Air moisture percentage.
+- **PE (Power Output):** Net hourly electrical energy output in megawatts (MW).
 
 ## 📊 Key Dataset Insights
 
@@ -70,7 +75,6 @@ This plot shows the **average power output** at each rounded ambient temperature
 - Power output decreases as ambient temperature increases.
 - This negative correlation is expected due to reduced thermal efficiency at higher temperatures.
 - The smooth downward trend highlights the importance of including temperature in the machine learning model.
-
 
 ## 🛠️ Technologies Used
 
