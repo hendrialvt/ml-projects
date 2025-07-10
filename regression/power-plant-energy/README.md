@@ -90,6 +90,6 @@ Below are the model’s performance metrics on the test set:
 
 | Metric                     | Value |
 |----------------------------|-------|
-| Mean Absolute Error (MAE)  | *0.1395* MW |
-| Root Mean Squared Error (RMSE) | *0.3056* MW |
-| R² Score                   | *0.9997* |
+| Mean Absolute Error (MAE)  | 0.1395 MW |
+| Root Mean Squared Error (RMSE) | 0.3056 MW |
+| R² Score                   | 0.9997 |
