@@ -1,4 +1,4 @@
-# ⚡ Power Plant Energy Output Prediction (Regression Project)
+# ⚡ Power Plant Energy Output Prediction
 
 This project predicts the **net hourly electrical energy output (PE)** of a Combined Cycle Power Plant based on environmental factors using a regression model.
 
