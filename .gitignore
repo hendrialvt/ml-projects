@@ -1,2 +1,22 @@
-# Ignore private notebook
+# Ignore private notebooks
 *_private.ipynb
+
+# Ignore environment config
+.env
+
+# Ignore model files
+*.joblib
+*.pkl
+*.h5
+*.keras
+models/
+
+# Ignore temporary files
+__pycache__/
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
