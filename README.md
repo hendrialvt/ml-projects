@@ -5,7 +5,7 @@ As a physics student, I focus on projects that blend data science with scientifi
 
 ## 📂 Projects Categories:
 ### Regression
-- [Power Plant Energy Output Prediction](./regression/power-plant-energy-output/)
+- [Power Plant Energy Output Prediction](./regression/power-plant-energy/)
 
 ### Classification 
 - [Customer Churn Prediction (Planned)](./classification/customer-churn-prediction/)
