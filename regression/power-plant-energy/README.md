@@ -2,7 +2,7 @@
 
 This project predicts the **net hourly electrical energy output (PE)** of a Combined Cycle Power Plant based on environmental factors using a regression model.
 
-As part of my learning journey, I build this project using **Google BigQuery** for data storage and analysis, and **Vertex AI Workbench** for model development and training.  
+As part of my learning journey, I built this project using **Google BigQuery** for data storage and analysis, and **Vertex AI Workbench** for model development and training.  
 
 ## 📒 Table of Contents
 
