@@ -37,3 +37,6 @@ As a physics student, I focus on projects that blend data science with scientifi
 If you'd like to collaborate or discuss these projects, feel free to connect:
 * Email: hendrialvt@gmail.com
 * LinkedIn: https://www.linkedin.com/in/hendrialvt/
+
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
